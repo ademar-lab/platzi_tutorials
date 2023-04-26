@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Piedra, papel o tijera</title>
+        <script>
+            const objects = {
+                1:"PIEDRA",
+                2:"PAPEL",
+                3:"TIJERA",
+            }
+            let user = prompt("Selecciona un objeto; 1 para piedra, 2 para papel, 3 para tijera.")
+            alert("Escogiste " + objects[user])
+            let computer = 1
+            alert("La computadora escogió " + objects[computer])
+            if (user == computer) {
+                alert("EMPATE")
+            }
+            else if (user == 1 && computer == 3) {
+                alert("GANASTE")
+            }
+            else if (user == 2 && computer == 1) {
+                alert("GANASTE")
+            }
+            else if (user == 3 && computer == 2) {
+                alert("GANASTE")
+            }
+            else {
+                alert("PERDISTE")
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Piedra, Papel o Tijera</h1>
+    </body>
+</html>
